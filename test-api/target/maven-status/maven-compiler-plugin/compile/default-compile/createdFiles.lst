@@ -1,0 +1,5 @@
+com\example\webapp\Automerk.class
+com\example\webapp\controller\HelloController.class
+com\example\webapp\jasper\ReportData.class
+com\example\webapp\service\ReportService.class
+com\example\webapp\JasperConfig.class

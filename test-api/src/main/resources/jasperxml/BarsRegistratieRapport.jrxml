@@ -1,0 +1,210 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Bars Registratie Rapport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6aa69b70-a86a-4391-bc92-9ca4c2a048c1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="NO_DATA_ADAPTER"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="AutomerkDataSet" uuid="30c1e25d-2ed4-49bc-bdab-436f61abaa79">
+		<query language="sql"><![CDATA[]]></query>
+		<field name="automerk" class="java.lang.String"/>
+		<field name="brandstof" class="java.lang.String"/>
+	</dataset>
+	<parameter name="bedrijfsnaam" class="java.lang.String"/>
+	<parameter name="inhoudingsnummer" class="java.lang.String"/>
+	<parameter name="naamWerknemer" class="java.lang.String"/>
+	<parameter name="persoonsKenmerk" class="java.lang.String"/>
+	<parameter name="maand" class="java.lang.String"/>
+	<parameter name="maandStatus" class="java.lang.String"/>
+	<parameter name="tijdDatumPrint" class="java.lang.String"/>
+	<parameter name="Automerk" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="SQL"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="180" splitType="Stretch">
+		<element kind="staticText" uuid="a4569f58-841d-4f30-b6cd-0b7560e32b54" x="0" y="-20" width="140" height="20">
+			<text><![CDATA[Bars Registratie Rapportage]]></text>
+		</element>
+		<element kind="staticText" uuid="41186d55-0469-47ae-a4aa-a3267b87d402" x="0" y="0" width="140" height="20" bold="true">
+			<text><![CDATA[Registratieoverzicht]]></text>
+		</element>
+		<element kind="staticText" uuid="f8471c7d-c1c2-4d28-bbb6-603da98d27eb" x="0" y="20" width="120" height="15" fontSize="8.0" bold="true">
+			<text><![CDATA[Bedrijfsgegevens:]]></text>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="f998f3ba-39bc-494d-89a8-2acc731a8941" x="0" y="30" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Bedrijfsnaam:]]></text>
+		</element>
+		<element kind="staticText" uuid="a509a5c9-8d3f-4d08-81aa-b6a4711f7033" x="0" y="40" width="80" height="20" fontSize="8.0">
+			<text><![CDATA[Inhoudingsnummer:]]></text>
+		</element>
+		<element kind="textField" uuid="857233da-f479-4495-8463-e21d7ba76167" x="80" y="30" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{bedrijfsnaam}]]></expression>
+		</element>
+		<element kind="textField" uuid="79675258-a93a-4a41-b933-c52a0e657aa1" x="80" y="40" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{inhoudingsnummer}]]></expression>
+		</element>
+		<element kind="staticText" uuid="ba0ed3b2-3ffc-40ec-8e29-3c3c18aaf580" x="0" y="60" width="120" height="15" fontSize="8.0" bold="true">
+			<text><![CDATA[Werknemersgegevens:]]></text>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="fe8d2582-6292-4a5e-977c-44534b53d2b5" x="0" y="70" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Naam werknemer:]]></text>
+		</element>
+		<element kind="textField" uuid="5b9bd36a-6288-417f-89c3-b148fc9e8c53" x="80" y="70" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{naamWerknemer}]]></expression>
+		</element>
+		<element kind="staticText" uuid="1b097e81-dc2d-4595-a755-9e3781b83377" x="0" y="83" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Persoons kenmerk:]]></text>
+		</element>
+		<element kind="textField" uuid="93eeb8e1-6f15-434a-a5f1-61c83e33a6cb" x="80" y="83" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{persoonsKenmerk}]]></expression>
+		</element>
+		<element kind="staticText" uuid="428aea91-51a2-4c28-9fee-fb4bb5d2dc18" x="0" y="98" width="70" height="15" fontSize="8.0" bold="true">
+			<text><![CDATA[Periode gegevens:]]></text>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="ffd46ac5-9285-4ffd-b7fa-2f6183f2a03b" x="0" y="108" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Maand:]]></text>
+		</element>
+		<element kind="staticText" uuid="9bab59cd-1caf-406f-82b5-d5b73a98569f" x="0" y="121" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Maand status:]]></text>
+		</element>
+		<element kind="staticText" uuid="c19e3bc2-57fb-4dff-8a20-10d43557efcc" x="0" y="140" width="70" height="20" fontSize="8.0">
+			<text><![CDATA[Tijd datum print:]]></text>
+		</element>
+		<element kind="textField" uuid="334c3403-880f-4e35-b109-2ee91f3f1edc" x="80" y="108" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{maand}]]></expression>
+		</element>
+		<element kind="textField" uuid="67731c80-5034-48f1-8d4d-076fd678a202" x="80" y="121" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{maandStatus}]]></expression>
+		</element>
+		<element kind="textField" uuid="b21f8350-0f84-423b-bf69-dd5c056e8b92" x="80" y="140" width="110" height="20" fontSize="8.0">
+			<expression><![CDATA[$P{tijdDatumPrint}]]></expression>
+		</element>
+	</title>
+	<columnHeader height="253" splitType="Stretch">
+		<element kind="component" uuid="463c9ac3-fb47-47fa-a36e-a5ddc72b5274" x="0" y="53" width="555" height="200">
+			<component kind="table">
+				<datasetRun uuid="0a8e751d-2745-40a0-8148-2a31a64a59b0" subDataset="AutomerkDataSet">
+					<dataSourceExpression><![CDATA[$P{Automerk}]]></dataSourceExpression>
+				</datasetRun>
+				<column kind="single" uuid="aeca6182-d4eb-448f-9a0c-ebca13889d32" width="120">
+					<tableHeader height="30" rowSpan="1" style="Table 2_TH">
+						<element kind="staticText" uuid="0c655e06-8d67-40ee-9a58-0aaa9e717a50" x="0" y="0" width="120" height="30">
+							<text><![CDATA[Auto]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table 2_TD">
+						<element kind="textField" uuid="e1bb6dd4-395f-4e86-8c3c-d749e09c5086" x="0" y="0" width="120" height="30">
+							<expression><![CDATA[$F{automerk}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+				</column>
+				<column kind="single" uuid="b451205c-4225-461f-bc9f-d32645ed8d17" width="132">
+					<tableHeader height="30" rowSpan="1" style="Table 2_TH">
+						<element kind="staticText" uuid="07c5b2a9-6b94-429b-8808-68f32f474aec" x="0" y="0" width="132" height="30">
+							<text><![CDATA[Auto]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table 2_TD">
+						<element kind="textField" uuid="42cbc98c-3979-452d-bd9c-638539b4cca1" x="0" y="0" width="132" height="30">
+							<expression><![CDATA[$F{brandstof}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+				</column>
+			</component>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+			<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+			<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
